@@ -1,11 +1,5 @@
 window.promises = [];
-const promises = [
-  new Promise(resolve => setTimeout(() => resolve(Math.random() * 4 + 1), Math.random() * 5000)),
-  new Promise(resolve => setTimeout(() => resolve(Math.random() * 4 + 1), Math.random() * 5000)),
-  new Promise(resolve => setTimeout(() => resolve(Math.random() * 4 + 1), Math.random() * 5000)),
-  new Promise(resolve => setTimeout(() => resolve(Math.random() * 4 + 1), Math.random() * 5000)),
-  new Promise(resolve => setTimeout(() => resolve(Math.random() * 4 + 1), Math.random() * 5000))
-];
+const promises = []
 
 Promise.any(promises).then(result => {
   const outputDiv = document.getElementById('output');
