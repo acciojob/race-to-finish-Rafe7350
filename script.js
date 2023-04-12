@@ -1,14 +1,7 @@
 window.promises = [];
-const promises = []
-
-Promise.any(promises).then(result => {
-  const outputDiv = document.getElementById('output');
-  outputDiv.innerHTML = `The winner is ${result.toFixed(2)} seconds!`;
-});
 
 // Do not change the code above this
 // add your promises to the array `promises`
-
 let x = Math.floor(Math.random() * 5) + 1;
 console.log(x);
 let promise1 = new Promise((resolve, reject) => {
